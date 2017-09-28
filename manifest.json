@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "BugzillaJS: Open all in Tabs",
+  "description": "Adds an option to load all bugs in tabs in bugzilla list view.",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": ["https://bugzilla.mozilla.org/buglist.cgi*"],
+      "js": ["jquery.js", "content-script.js"]
+    }
+  ]
+}
