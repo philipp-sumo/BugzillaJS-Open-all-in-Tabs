@@ -16,8 +16,7 @@
 var a = $('<a>', {'href': '#',
 	'click': openAll,
 	'text': 'Open All in Tabs'}),
-	pipe = $('<span>', {'html': '&nbsp;|'}),
 	td = $('<td>');
 
-td.append(a).append(pipe);
-$('.bz_query_edit').before(td);
+$('table[class="bz_buglist sortable"]').before(td);
+td.append(a);
