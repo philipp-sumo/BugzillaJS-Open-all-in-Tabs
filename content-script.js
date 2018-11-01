@@ -1,6 +1,4 @@
-﻿debugger;
-
-var openAll = function(e) {
+﻿var openAll = function(e) {
 	e.preventDefault();
 
 	var all = $('.bz_id_column a');
